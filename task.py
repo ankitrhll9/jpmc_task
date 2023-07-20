@@ -1,5 +1,8 @@
 #Please find the code below:
 
+import datetime
+
+
 gbce = {
     #Stock Symbol, Type, Last Dividend, Fixed Dividend, Par Value
     "TEA":["Common",0," ",100],
@@ -9,6 +12,8 @@ gbce = {
     "JOE":["Common",13," ",250],
 }
 
+trade_records = {}
+
 for k,v in gbce.items():  
 
     divident_yield = v[1]/v[3]  
@@ -17,4 +22,14 @@ for k,v in gbce.items():
     try:
         print("PE Ratio for "+k+" is "+ str(v[3]/divident_yield))
     except ZeroDivisionError:
-        print("PE Ratio for "+k+" is "+ str(0))   
+        print("PE Ratio for "+k+" is "+ str(0))
+
+    print("Volume Weighted Stock Price for "+k+" is "+str(v[3]))")   
+
+#code to get the current timestamp
+
+# trade_records["TEA"] = [str(datetime.datetime.now()), 100, "Buy", 100]
+# trade_records["POP"] = [str(datetime.datetime.now()), 90, "Sell", 100]
+
+# print(trade_records)
+
