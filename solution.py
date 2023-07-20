@@ -12,7 +12,6 @@ gbce = {
 }
 
 def results(k,v):
-
     #code for divident yield
     divident_yield = v[1]/v[3]  
     print("\nDividend Yield for "+k+" is "+str(divident_yield)+"%")
