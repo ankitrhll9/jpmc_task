@@ -1,7 +1,6 @@
 #Please find the solution code below:
 
 import datetime
-from time import sleep
 
 gbce = {
     #Stock Symbol, Type, Last Dividend, Fixed Dividend, Par Value
